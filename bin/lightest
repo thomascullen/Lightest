@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+#
+
+require "lightest"
+Dir["#{Dir.getwd}/**/*_test.rb"].each { |f| load(f) }
+Lightest.run_tests
+
